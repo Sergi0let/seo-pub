@@ -326,11 +326,11 @@ html {
 .header__container {
   height: 40px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   -webkit-column-gap: 12px;
   -moz-column-gap: 12px;
-  column-gap: 12px
+  column-gap: 12px;
+  justify-content: center
 }
 .header__container nav {
   display: none
@@ -880,6 +880,7 @@ html {
     padding-top: clamp(11.6875rem,1.8231rem + 20.5508vw,17.75rem)
   }
   .header__container {
+    justify-content: space-between;
     width: 100%;
     position: fixed;
     top: 0;
