@@ -12,8 +12,8 @@
                 backgroundColor: "#ffffff",
                 scrollTrigger: {
                     trigger: topic,
-                    start: "top 80%",
-                    end: "top 20%",
+                    start: "bottom 80%",
+                    end: "bottom 20%",
                     toggleActions: "play none none reverse",
                     scrub: false,
                     markers: false
@@ -23,8 +23,8 @@
                 color: "#ffffff",
                 scrollTrigger: {
                     trigger: topic,
-                    start: "top 80%",
-                    end: "top 20%",
+                    start: "bottom 80%",
+                    end: "bottom 20%",
                     toggleActions: "play none none reverse",
                     markers: false,
                     scrub: false
@@ -39,9 +39,9 @@
             ease: "power2.out",
             scrollTrigger: {
                 trigger: topicMain,
-                start: "top 80%",
+                start: "bottom 80%",
                 end: "bottom 20%",
-                scrub: true
+                scrub: false
             }
         });
     };
