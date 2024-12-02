@@ -263,7 +263,7 @@ html {
   padding-bottom: 0
 }
 .sec-wrap.--hero .sec-wrap__container h1 {
-  padding-top: 184px;
+  padding-top: 140px;
   position: relative;
   z-index: 20
 }
@@ -404,16 +404,29 @@ html {
   font-weight: 400;
   text-align: center
 }
+.key-block {
+  position: absolute;
+  top: -80px;
+  left: -169px;
+  z-index: 20;
+  min-width: 300px;
+  height: 336px;
+  width: 100%;
+  background-image: url(../img/keys/web-keys_1x.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center
+}
 .key-decor {
   position: absolute;
-  z-index: 5;
-  max-width: 424px;
-  top: -64px;
-  left: -130px
+  z-index: 20;
+  max-width: clamp(26.5rem,-35.8333rem + 129.8611vw,120rem);
+  top: clamp(-9.625rem,-.25rem - 7.8125vw,-4rem);
+  left: -20%
 }
 .key-decor img {
-  height: auto;
-  width: 100%
+  width: 100%;
+  height: auto
 }
 .heading {
   display: flex;
@@ -426,13 +439,14 @@ html {
   font-weight: 800;
   line-height: 1;
   text-align: center;
-  font-size: clamp(8.125rem,-1.4583rem + 19.9653vw,22.5rem)
+  font-size: clamp(8.125rem,2.7083rem + 11.2847vw,16.25rem)
 }
 .heading__subtitle {
   margin-top: 16px;
   display: flex;
   flex-direction: column;
-  align-items: center
+  align-items: center;
+  padding-bottom: 55px
 }
 .heading__subtitle i {
   position: relative;
@@ -441,7 +455,6 @@ html {
 }
 .heading__subtitle p {
   position: relative;
-  padding-bottom: 55px;
   z-index: 10;
   margin-top: 36px;
   font-size: clamp(.875rem,.4682rem + .8475vw,1.125rem);
@@ -555,14 +568,15 @@ html {
   white-space: nowrap
 }
 .contact-list li > a span {
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
+  -webkit-margin-start: 8px;
+  margin-inline-start: 8px;
   font-size: 18px;
   transition: color .3s;
-  text-decoration: underline
+  border-bottom: 1px solid var(--text-primary)
 }
 .contact-list li > a:hover span {
-  color: var(--text-accent)
+  color: var(--text-accent);
+  border-color: var(--text-accent)
 }
 .faq {
   margin-top: clamp(1.5rem,.895rem + 1.2605vw,2.25rem)
@@ -875,11 +889,9 @@ html {
   color: var(--text-blur-dark)
 }
 @media (min-width:47.99875em) {
-  .sec-wrap.--hero .sec-wrap__container {
-    padding-bottom: 0
-  }
   .sec-wrap.--hero .sec-wrap__container h1 {
     white-space: nowrap;
+    padding-top: 200px;
     width: 100%
   }
   .header {
@@ -910,10 +922,9 @@ html {
     font-size: 36px;
     line-height: 50px
   }
-  .key-decor {
-    max-width: 700px;
-    top: 0;
-    left: -132px
+  .key-block {
+    top: -20px;
+    left: -260px
   }
   .heading h1 {
     padding-bottom: 0
@@ -927,8 +938,7 @@ html {
     margin-top: 0
   }
   .heading__subtitle p {
-    margin-top: 16px;
-    padding-bottom: 0
+    margin-top: 16px
   }
   .heading__subtitle i {
     padding-left: 32px
@@ -971,8 +981,8 @@ html {
     font-size: 24px
   }
   .contact-list li > a span {
-    -webkit-padding-start: 12px;
-    padding-inline-start: 12px;
+    -webkit-margin-start: 12px;
+    margin-inline-start: 12px;
     font-size: 24px
   }
   .contact-list li {
@@ -996,6 +1006,9 @@ html {
   }
 }
 @media (min-width:61.99875em) {
+  .sec-wrap.--hero .sec-wrap__container {
+    padding-bottom: 0
+  }
   .meetup {
     display: none;
     padding-inline: 18px
@@ -1010,9 +1023,11 @@ html {
     position: relative;
     z-index: 5
   }
-  .key-decor {
-    top: -61px;
-    left: -213px
+  .key-block {
+    top: 32px
+  }
+  .heading__subtitle {
+    padding-bottom: 0
   }
   .contact-list li {
     flex: 1 0 calc(33.3333% - 48px)
@@ -1065,21 +1080,15 @@ html {
     display: none
   }
 }
-@media (min-width:1240px) {
-  .key-decor {
-    max-width: 854px;
-    top: -98px;
-    left: -286px
+@media (min-width:430px) {
+  .key-block {
+    max-width: clamp(26.25rem,1.9783rem + 50.4348vw,62.5rem);
+    height: clamp(26.25rem,9.7727rem + 43.9394vw,25.5rem)
   }
 }
 @media (min-width:1740px) {
   .sec-wrap.--hero .sec-wrap__container h1 {
     padding-top: 287px
-  }
-  .key-decor {
-    max-width: 1060px;
-    top: -154px;
-    left: -394px
   }
 }
 @media (any-hover:hover) {
