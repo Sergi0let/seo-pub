@@ -782,7 +782,8 @@ html {
   z-index: 50;
   top: 0;
   background: #f8f8f8;
-  width: 100%
+  width: 100%;
+  outline: 0
 }
 .modal__close ._icon-arrow-stroke {
   font-size: 12px;
