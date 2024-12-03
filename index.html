@@ -1,374 +1,517 @@
 <!doctype html>
 <html lang="uk-UA">
+  <head>
+    <title>SEO PUB</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20241203145435" />
 
-<head>
-	<title>SEO PUB</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241202210523">
-	<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
-	<link rel="shortcut icon" href="favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.webp">
-	<meta name="apple-mobile-web-app-title" content="seo-pub">
-	<link rel="manifest" href="favicon/site.webmanifest">
-	<link rel="icon" type="image/webp" href="favicon/favicon-96x96.webp" sizes="96x96">
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.webp">
-	<meta property="og:title" content="Seo pub">
-	<meta property="og:description" content="Seo pub is a website for seo marketing">
-	<meta property="og:image" content="https://sergi0let.github.io/seo-pub/favicon/web-app-manifest-512x512.webp">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://sergi0let.github.io/seo-pub">
-	<meta name="twitter:title" content="Seo pub">
-	<meta name="twitter:description" content="Seo pub is a website for seo marketing">
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.webp"
+    />
+    <meta name="apple-mobile-web-app-title" content="seo-pub" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="icon"
+      type="image/webp"
+      href="favicon/favicon-96x96.webp"
+      sizes="96x96"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.webp"
+    />
+    <meta property="og:title" content="Seo pub" />
+    <meta
+      property="og:description"
+      content="Seo pub is a website for seo marketing"
+    />
+    <meta
+      property="og:image"
+      content="https://sergi0let.github.io/seo-pub/favicon/web-app-manifest-512x512.webp"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sergi0let.github.io/seo-pub" />
+    <meta name="twitter:title" content="Seo pub" />
+    <meta
+      name="twitter:description"
+      content="Seo pub is a website for seo marketing"
+    />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<body>
-	<div class="wrapper">
-		<header class="header">
-			<div class="header__container">
-				<span class="header__logo btn-dark">SEO PUB</span>
-				<nav>
-					<a href="#meetup1">Friends Meetup #1</a>
-					<a href="#speakers2">Speakers</a>
-					<a href="#topics3">Topics</a>
-					<a href="#contacts4">Contacts</a>
-				</nav>
-				<a href="#" class="header__register btn-dark">Register</a>
-			</div>
-		</header>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <span class="header__logo btn-dark">SEO PUB</span>
+          <nav>
+            <a href="#meetup1">Friends Meetup #1</a>
+            <a href="#speakers2">Speakers</a>
+            <a href="#topics3">Topics</a>
+            <a href="#contacts4">Contacts</a>
+          </nav>
+          <a href="#" class="header__register btn-dark">Register</a>
+        </div>
+      </header>
 
-		<main class="page">
-			<div class="sec-wrap --hero">
-				<div class="sec-wrap__container">
-					<div class="hero-deco">
-						<div></div>
-						<div></div>
-						<div></div>
-						<span></span>
-					</div>
-					<div class="key-block"></div>
+      <main class="page">
+        <div class="sec-wrap --hero">
+          <div class="sec-wrap__container">
+            <div class="hero-deco">
+              <div></div>
+              <div></div>
+              <div></div>
+              <span></span>
+            </div>
+            <!-- <div class="key-block"></div> -->
+            <picture class="key-decor key-block">
+              <source
+                media="(max-width: 991px)"
+                srcset="
+                  img/keys/mob-keys_1x.webp   1x,
+                  img/keys/mob-keys_1_5x.webp 1.5x,
+                  img/keys/mob-keys_2x.webp   2x,
+                  img/keys/mob-keys_3x.webp   3x
+                "
+              />
+              <img
+                src="img/keys/web-keys_1x.webp"
+                srcset="
+                  img/keys/web-keys_1x.webp   1x,
+                  img/keys/web-keys_1_5x.webp 1.5x,
+                  img/keys/web-keys_2x.webp   2x,
+                  img/keys/web-keys_3x.webp   3x
+                "
+                alt="key belt"
+                width="1060"
+                height="796"
+                class="parallax-element"
+              />
+            </picture>
+            <div class="meetup meetup_hero">
+              <div class="meetup__info">
+                <p class="meetup__label">Next SEO Meetup #1</p>
+                <time datetime="2024-12-18"
+                  >Warsaw | 18.12.2024 (Wednesday)</time
+                >
+              </div>
+              <div class="meetup__register">
+                <a href="#meetup1" class="btn-light">DETAILS</a>
+              </div>
+            </div>
+            <div class="heading">
+              <div>
+                <h1 id="main-title">SEO PUB</h1>
+                <div class="heading__subtitle">
+                  <i class="_icon-traffband"></i>
+                  <p>
+                    A vibrant community for SEO specialists and enthusiasts.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="meetup">
+          <div class="meetup__info">
+            <p class="meetup__label">Next SEO Meetup #1</p>
+            <time datetime="2024-12-18">Warsaw | 18.12.2024 (Wednesday)</time>
+          </div>
+          <div class="meetup__register">
+            <a href="#meetup1" class="btn-light">DETAILS</a>
+          </div>
+        </div>
+        <section class="sec-wrap">
+          <div class="sec-wrap__container">
+            <div class="hero-deco hero-deco_meet">
+              <div></div>
+              <div></div>
+              <div></div>
+              <span></span>
+            </div>
+            <h2 id="meetup1">Friends Meetup #1</h2>
+            <ul class="contact-list meet">
+              <li>
+                <div>Date:</div>
+                <time datetime="2024-12-18">18.12.2024 (Wednesday)</time>
+              </li>
+              <li>
+                <div>Time:</div>
+                <span>16:00–18:00</span>
+              </li>
+              <li>
+                <div>Location:</div>
+                <span>Kufle i Kapsle multitap bar</span>
+                <a
+                  href="https://www.seo-pub.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="location"
+                >
+                  <div class="location__icon">
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.0344 13.0946L14.921 17.6923L10.3171 22.2731C8.60488 20.097 6.73516 17.989 5.59521 15.4393L8.07678 11.6378L11.8829 7.96582C10.6108 9.53795 10.7058 11.8502 12.1679 13.3123C13.7321 14.8765 16.2675 14.8765 17.8317 13.3123C17.9022 13.2418 17.9703 13.1689 18.0344 13.0946Z"
+                        fill="#ECB72B"
+                      />
+                      <path
+                        d="M18.1069 13.0082C19.3901 11.4353 19.299 9.1151 17.8322 7.64908C16.268 6.08486 13.7325 6.08486 12.1684 7.64908C12.1027 7.71477 12.0401 7.78209 11.98 7.85094L14.6056 3.58256L18.1678 0.488281C20.8284 1.33051 23.029 3.2058 24.2996 5.64318L21.7008 9.83357L18.1069 13.0082Z"
+                        fill="#5085F7"
+                      />
+                      <path
+                        d="M11.8829 7.96586L5.59514 15.4394C4.97152 14.0459 4.56611 12.5205 4.52428 10.7795C4.52111 10.6806 4.51953 10.5808 4.51953 10.4811C4.51953 7.91951 5.43857 5.5716 6.96559 3.75098L11.8829 7.96586Z"
+                        fill="#DA2F2A"
+                      />
+                      <path
+                        d="M11.8829 7.96576L6.96533 3.75059C8.88814 1.45811 11.7735 0 15.0001 0C16.1043 0 17.1686 0.170859 18.1679 0.4875L11.8829 7.96576Z"
+                        fill="#4274EB"
+                      />
+                      <path
+                        d="M25.4804 10.48C25.4804 8.7351 25.054 7.08979 24.2997 5.64258L10.3169 22.273C11.9055 24.2938 13.3571 26.3737 13.9604 28.9207C13.9798 29.0023 14.0006 29.0976 14.0227 29.2048C14.2414 30.2645 15.7588 30.2645 15.9776 29.2048C15.9997 29.0976 16.0205 29.0023 16.0399 28.9207C17.6481 22.1302 25.2864 18.6599 25.476 10.779C25.4787 10.6796 25.4804 10.58 25.4804 10.48Z"
+                        fill="#60A850"
+                      />
+                    </svg>
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.0344 13.0943L14.921 17.692L10.3171 22.2729C8.60488 20.0968 6.73516 17.9887 5.59521 15.439L8.07678 11.6375L11.8829 7.96558C10.6108 9.53771 10.7058 11.8499 12.1679 13.312C13.7321 14.8762 16.2675 14.8762 17.8317 13.312C17.9022 13.2415 17.9703 13.1687 18.0344 13.0943Z"
+                        fill="#0B0B0B"
+                      />
+                      <path
+                        d="M18.1069 13.0079C19.3901 11.435 19.299 9.11485 17.8322 7.64884C16.268 6.08462 13.7325 6.08462 12.1684 7.64884C12.1027 7.71452 12.0401 7.78185 11.98 7.85069L14.6056 3.58231L18.1678 0.488037C20.8284 1.33026 23.029 3.20556 24.2996 5.64294L21.7008 9.83333L18.1069 13.0079Z"
+                        fill="#0B0B0B"
+                      />
+                      <path
+                        d="M11.8829 7.96586L5.59514 15.4394C4.97152 14.0459 4.56611 12.5205 4.52428 10.7795C4.52111 10.6806 4.51953 10.5808 4.51953 10.4811C4.51953 7.91951 5.43857 5.5716 6.96559 3.75098L11.8829 7.96586Z"
+                        fill="#0B0B0B"
+                      />
+                      <path
+                        d="M11.8829 7.96576L6.96533 3.75059C8.88814 1.45811 11.7735 0 15.0001 0C16.1043 0 17.1686 0.170859 18.1679 0.4875L11.8829 7.96576Z"
+                        fill="#0B0B0B"
+                      />
+                      <path
+                        d="M25.4804 10.4804C25.4804 8.73559 25.054 7.09027 24.2997 5.64307L10.3169 22.2735C11.9055 24.2943 13.3571 26.3742 13.9604 28.9212C13.9798 29.0028 14.0006 29.0981 14.0227 29.2053C14.2414 30.265 15.7588 30.265 15.9776 29.2053C15.9997 29.0981 16.0205 29.0028 16.0399 28.9212C17.6481 22.1306 25.2864 18.6604 25.476 10.7795C25.4787 10.6801 25.4804 10.5805 25.4804 10.4804Z"
+                        fill="#0B0B0B"
+                      />
+                    </svg>
+                  </div>
+                  <span>Nowogrodzka 25, Warsaw</span>
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="contact-list__register btn-dark">REGISTER</a>
+          </div>
+        </section>
+        <section class="sec-wrap">
+          <div class="sec-wrap__container">
+            <h2 id="speakers2">Speakers</h2>
 
-					<div class="meetup meetup_hero">
-						<div class="meetup__info">
-							<p class="meetup__label">Next SEO Meetup #1</p>
-							<time datetime="2024-12-18">Warsaw | 18.12.2024 (Wednesday)</time>
-						</div>
-						<div class="meetup__register">
-							<a href="#meetup1" class="btn-light">DETAILS</a>
-						</div>
-					</div>
-					<div class="heading">
-						<h1 id="main-title">SEO PUB</h1>
-						<div class="heading__subtitle">
-							<i class="_icon-traffband"></i>
-							<p>A vibrant community for SEO specialists and enthusiasts.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="meetup">
-				<div class="meetup__info">
-					<p class="meetup__label">Next SEO Meetup #1</p>
-					<time datetime="2024-12-18">Warsaw | 18.12.2024 (Wednesday)</time>
-				</div>
-				<div class="meetup__register">
-					<a href="#meetup1" class="btn-light">DETAILS</a>
-				</div>
-			</div>
-			<section class="sec-wrap">
-				<div class="sec-wrap__container">
-					<div class="hero-deco hero-deco_meet">
-						<div></div>
-						<div></div>
-						<div></div>
-						<span></span>
-					</div>
-					<h2 id="meetup1">Friends Meetup #1</h2>
-					<ul class="contact-list meet">
-						<li>
-							<div>Date:</div>
-							<time datetime="2024-12-18">18.12.2024 (Wednesday)</time>
-						</li>
-						<li>
-							<div>Time:</div>
-							<span>16:00–18:00</span>
-						</li>
-						<li>
-							<div>Location:</div>
-							<span>Kufle i Kapsle multitap bar</span>
-							<a href="https://www.seo-pub.com" target="_blank" rel="noopener noreferrer" class="location">
-								<div class="location__icon">
-									<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M18.0344 13.0946L14.921 17.6923L10.3171 22.2731C8.60488 20.097 6.73516 17.989 5.59521 15.4393L8.07678 11.6378L11.8829 7.96582C10.6108 9.53795 10.7058 11.8502 12.1679 13.3123C13.7321 14.8765 16.2675 14.8765 17.8317 13.3123C17.9022 13.2418 17.9703 13.1689 18.0344 13.0946Z" fill="#ECB72B" />
-										<path d="M18.1069 13.0082C19.3901 11.4353 19.299 9.1151 17.8322 7.64908C16.268 6.08486 13.7325 6.08486 12.1684 7.64908C12.1027 7.71477 12.0401 7.78209 11.98 7.85094L14.6056 3.58256L18.1678 0.488281C20.8284 1.33051 23.029 3.2058 24.2996 5.64318L21.7008 9.83357L18.1069 13.0082Z" fill="#5085F7" />
-										<path d="M11.8829 7.96586L5.59514 15.4394C4.97152 14.0459 4.56611 12.5205 4.52428 10.7795C4.52111 10.6806 4.51953 10.5808 4.51953 10.4811C4.51953 7.91951 5.43857 5.5716 6.96559 3.75098L11.8829 7.96586Z" fill="#DA2F2A" />
-										<path d="M11.8829 7.96576L6.96533 3.75059C8.88814 1.45811 11.7735 0 15.0001 0C16.1043 0 17.1686 0.170859 18.1679 0.4875L11.8829 7.96576Z" fill="#4274EB" />
-										<path d="M25.4804 10.48C25.4804 8.7351 25.054 7.08979 24.2997 5.64258L10.3169 22.273C11.9055 24.2938 13.3571 26.3737 13.9604 28.9207C13.9798 29.0023 14.0006 29.0976 14.0227 29.2048C14.2414 30.2645 15.7588 30.2645 15.9776 29.2048C15.9997 29.0976 16.0205 29.0023 16.0399 28.9207C17.6481 22.1302 25.2864 18.6599 25.476 10.779C25.4787 10.6796 25.4804 10.58 25.4804 10.48Z" fill="#60A850" />
-									</svg>
-									<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M18.0344 13.0943L14.921 17.692L10.3171 22.2729C8.60488 20.0968 6.73516 17.9887 5.59521 15.439L8.07678 11.6375L11.8829 7.96558C10.6108 9.53771 10.7058 11.8499 12.1679 13.312C13.7321 14.8762 16.2675 14.8762 17.8317 13.312C17.9022 13.2415 17.9703 13.1687 18.0344 13.0943Z" fill="#0B0B0B" />
-										<path d="M18.1069 13.0079C19.3901 11.435 19.299 9.11485 17.8322 7.64884C16.268 6.08462 13.7325 6.08462 12.1684 7.64884C12.1027 7.71452 12.0401 7.78185 11.98 7.85069L14.6056 3.58231L18.1678 0.488037C20.8284 1.33026 23.029 3.20556 24.2996 5.64294L21.7008 9.83333L18.1069 13.0079Z" fill="#0B0B0B" />
-										<path d="M11.8829 7.96586L5.59514 15.4394C4.97152 14.0459 4.56611 12.5205 4.52428 10.7795C4.52111 10.6806 4.51953 10.5808 4.51953 10.4811C4.51953 7.91951 5.43857 5.5716 6.96559 3.75098L11.8829 7.96586Z" fill="#0B0B0B" />
-										<path d="M11.8829 7.96576L6.96533 3.75059C8.88814 1.45811 11.7735 0 15.0001 0C16.1043 0 17.1686 0.170859 18.1679 0.4875L11.8829 7.96576Z" fill="#0B0B0B" />
-										<path d="M25.4804 10.4804C25.4804 8.73559 25.054 7.09027 24.2997 5.64307L10.3169 22.2735C11.9055 24.2943 13.3571 26.3742 13.9604 28.9212C13.9798 29.0028 14.0006 29.0981 14.0227 29.2053C14.2414 30.265 15.7588 30.265 15.9776 29.2053C15.9997 29.0981 16.0205 29.0028 16.0399 28.9212C17.6481 22.1306 25.2864 18.6604 25.476 10.7795C25.4787 10.6801 25.4804 10.5805 25.4804 10.4804Z" fill="#0B0B0B" />
-									</svg>
-								</div>
-								<span>Nowogrodzka 25, Warsaw</span>
-							</a>
-						</li>
-					</ul>
-					<a href="#" class="contact-list__register btn-dark">REGISTER</a>
-				</div>
-			</section>
-			<section class="sec-wrap">
-				<div class="sec-wrap__container">
-					<h2 id="speakers2">Speakers</h2>
+            <ul class="speakers">
+              <li class="speakers__item">
+                <button id="openDialog1" class="speakers__btn _icon-arrow-b-r">
+                  <strong>Alex Shpion</strong>
+                  <span>SEO Specialist</span>
+                </button>
 
-					<ul class="speakers">
-						<li class="speakers__item">
-							<button id="openDialog1" class="speakers__btn _icon-arrow-b-r">
-								<strong>Alex Shpion</strong>
-								<span>SEO Specialist</span>
-							</button>
-
-							<dialog class="modal" id="dialog1">
-								<div class="modal__dekor">
-									<div></div>
-									<div></div>
-									<div></div>
-								</div>
-								<button id="closeDialog1" class="modal__close">
-									<i class="_icon-arrow-stroke"></i>
-									<i class="_icon-close"></i>
-									<span>Go back</span>
-								</button>
-								<h3 class="modal__title">Alex Shpion</h3>
-								<figure class="modal__img">
-									<img class="" src="img/mob-as_1x.webp" srcset="
+                <dialog class="modal" id="dialog1">
+                  <div class="modal__dekor">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <button id="closeDialog1" class="modal__close">
+                    <i class="_icon-arrow-stroke"></i>
+                    <i class="_icon-close"></i>
+                    <span>Go back</span>
+                  </button>
+                  <h3 class="modal__title">Alex Shpion</h3>
+                  <figure class="modal__img">
+                    <img
+                      class=""
+                      src="img/mob-as_1x.webp"
+                      srcset="
                         img/mob-as_1x.webp   1x,
                         img/mob-as_1_5x.webp 1.5x,
                         img/mob-as_2x.webp   2x,
                         img/mob-as_3x.webp   3x
-                      " alt="Photo " width="342" height="320">
-								</figure>
-								<div class="modal__content">
-									<p>
-										<b>Alexander SHPION</b> – COO and one of the founders of
-										Traffband, a leading company in the field of search engine
-										optimization (SEO). With a proven track record of
-										delivering projects that rank at the top for the most
-										competitive keywords, his work has made an impact globally
-									</p>
-									<p>
-										<i>With 9 years of experience</i> in internet marketing,
-										including 8 years in SEO and 7 years in managing his own
-										projects, Alexander has successfully launched 15 new
-										projects from scratch over the past 4 years.
-									</p>
-									<p>
-										<i>His professional interests include</i> e-commerce
-										project management, SEO, PPC, affiliate marketing,
-										business development, and startup management.
-									</p>
-								</div>
-								<footer class="modal__footer">
-									<p>Speaker 1</p>
-									<button id="toDialog2" class="modal__next _icon-arrow-b-r">
-										<strong>Stanislav YEZHYK</strong>
-										<span>Head of SEO</span>
-									</button>
-								</footer>
-							</dialog>
-						</li>
-						<li class="speakers__item">
-							<button id="openDialog2" class="speakers__btn _icon-arrow-b-r">
-								<strong>Stanislav YEZHYK</strong>
-								<span>Head of SEO Traffband</span>
-							</button>
+                      "
+                      alt="Photo "
+                      width="342"
+                      height="320"
+                    />
+                  </figure>
+                  <div class="modal__content">
+                    <p>
+                      <b>Alexander SHPION</b> – COO and one of the founders of
+                      Traffband, a leading company in the field of search engine
+                      optimization (SEO). With a proven track record of
+                      delivering projects that rank at the top for the most
+                      competitive keywords, his work has made an impact globally
+                    </p>
+                    <p>
+                      <i>With 9 years of experience</i> in internet marketing,
+                      including 8 years in SEO and 7 years in managing his own
+                      projects, Alexander has successfully launched 15 new
+                      projects from scratch over the past 4 years.
+                    </p>
+                    <p>
+                      <i>His professional interests include</i> e-commerce
+                      project management, SEO, PPC, affiliate marketing,
+                      business development, and startup management.
+                    </p>
+                  </div>
+                  <footer class="modal__footer">
+                    <p>Speaker 1</p>
+                    <button id="toDialog2" class="modal__next _icon-arrow-b-r">
+                      <strong>Stanislav YEZHYK</strong>
+                      <span>Head of SEO</span>
+                    </button>
+                  </footer>
+                </dialog>
+              </li>
+              <li class="speakers__item">
+                <button id="openDialog2" class="speakers__btn _icon-arrow-b-r">
+                  <strong>Stanislav YEZHYK</strong>
+                  <span>Head of SEO Traffband</span>
+                </button>
 
-							<dialog class="modal" id="dialog2">
-								<div class="modal__dekor">
-									<div></div>
-									<div></div>
-									<div></div>
-								</div>
-								<button id="closeDialog2" class="modal__close">
-									<i class="_icon-arrow-stroke"></i>
-									<i class="_icon-close"></i>
-									<span>Go back</span>
-								</button>
-								<h3 class="modal__title">Stanislav YEZHYK</h3>
-								<figure class="modal__img">
-									<img class="" src="img/mob-sy_1x.webp" srcset="
+                <dialog class="modal" id="dialog2">
+                  <div class="modal__dekor">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <button id="closeDialog2" class="modal__close">
+                    <i class="_icon-arrow-stroke"></i>
+                    <i class="_icon-close"></i>
+                    <span>Go back</span>
+                  </button>
+                  <h3 class="modal__title">Stanislav YEZHYK</h3>
+                  <figure class="modal__img">
+                    <img
+                      class=""
+                      src="img/mob-sy_1x.webp"
+                      srcset="
                         img/mob-sy_1x.webp   1x,
                         img/mob-sy_1_5x.webp 1.5x,
                         img/mob-sy_2x.webp   2x,
                         img/mob-sy_3x.webp   3x
-                      " alt="Photo " width="342" height="320">
-								</figure>
-								<div class="modal__content">
-									<p>
-										<b>Stanislav YEZHYK</b> – Head of SEO at Traffband. He
-										started his SEO career from the ground up and, with a deep
-										understanding of the industry, became the leader of a team
-										responsible for search engine optimization across
-										international markets.
-									</p>
-									<p>
-										Stanislav has successfully launched dozens of websites
-										targeting different geos, achieving impressive results in
-										search rankings. Under his leadership, the team
-										consistently achieves top positions for competitive
-										keywords while continuously refining processes to ensure
-										sustainable growth and results.
-									</p>
-									<p>
-										His areas of expertise include strategic SEO, technical
-										optimization, and developing effective content strategies.
-									</p>
-								</div>
+                      "
+                      alt="Photo "
+                      width="342"
+                      height="320"
+                    />
+                  </figure>
+                  <div class="modal__content">
+                    <p>
+                      <b>Stanislav YEZHYK</b> – Head of SEO at Traffband. He
+                      started his SEO career from the ground up and, with a deep
+                      understanding of the industry, became the leader of a team
+                      responsible for search engine optimization across
+                      international markets.
+                    </p>
+                    <p>
+                      Stanislav has successfully launched dozens of websites
+                      targeting different geos, achieving impressive results in
+                      search rankings. Under his leadership, the team
+                      consistently achieves top positions for competitive
+                      keywords while continuously refining processes to ensure
+                      sustainable growth and results.
+                    </p>
+                    <p>
+                      His areas of expertise include strategic SEO, technical
+                      optimization, and developing effective content strategies.
+                    </p>
+                  </div>
 
-								<footer class="modal__footer">
-									<p>Speaker 1</p>
-									<button id="backToDialog1" class="modal__next _icon-arrow-b-r">
-										<strong>Alex Shpion</strong>
-										<span>COO</span>
-									</button>
-								</footer>
-							</dialog>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section class="sec-wrap --dark">
-				<div class="sec-wrap__container">
-					<h2 id="topics3">Topics</h2>
-					<ul class="topics">
-						<li class="topics__line"></li>
-						<li class="topics__line-bg"></li>
-						<li class="topics__item topics__item_hide">
-							<div class="topics__circle"></div>
-							<p class="topics__title">Spots and hyperpigmentation?</p>
-						</li>
-						<li class="topics__item">
-							<div class="topics__circle"></div>
-							<p class="topics__title">Competitors Audit.</p>
-						</li>
-						<li class="topics__item">
-							<div class="topics__circle"></div>
-							<p class="topics__title">
-								SEO and AI: How to Leverage AI for Better Rankings?
-							</p>
-						</li>
-						<li class="topics__item">
-							<div class="topics__circle"></div>
-							<p class="topics__title">
-								Website Speed: Why It Matters and How to Optimize It.
-							</p>
-						</li>
-						<li class="topics__item">
-							<div class="topics__circle"></div>
-							<p class="topics__title">
-								Link Building in 2024: What Works and What Doesn’t?
-							</p>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section class="sec-wrap">
-				<div class="sec-wrap__container">
-					<h2>FAQ</h2>
-					<ul class="faq">
-						<li class="accordion">
-							<details class="accordion__details" data-name="faq-1" open>
-								<summary class="accordion__summary">
-									<span class="accordion__title" role="term" aria-details="faq-1">Is the event free to attend?
-									</span>
-								</summary>
-							</details>
-							<div class="accordion__content" id="faq-1" role="definition">
-								<p class="accordion__content-body">
-									Yes, the event is free, but registration is required due to
-									limited seating.
-								</p>
-							</div>
-						</li>
-						<li class="accordion">
-							<details class="accordion__details" data-name="faq-2">
-								<summary class="accordion__summary">
-									<span class="accordion__title" role="term" aria-details="faq-2">Do I need to bring anything?
-									</span>
-								</summary>
-							</details>
-							<div class="accordion__content" id="faq-2" role="definition">
-								<p class="accordion__content-body">
-									Just bring your curiosity and maybe a notebook if you’d like
-									to take notes!
-								</p>
-							</div>
-						</li>
-						<li class="accordion">
-							<details class="accordion__details" data-name="faq-3">
-								<summary class="accordion__summary">
-									<span class="accordion__title" role="term" aria-details="faq-3">Will there be networking opportunities?
-									</span>
-								</summary>
-							</details>
-							<div class="accordion__content" id="faq-3" role="definition">
-								<p class="accordion__content-body">
-									Just bring your curiosity and maybe a notebook if you’d like
-									to take notes!
-								</p>
-							</div>
-						</li>
-						<li class="accordion">
-							<details class="accordion__details" data-name="faq-4">
-								<summary class="accordion__summary">
-									<span class="accordion__title" role="term" aria-details="faq-4">What language will the event be in?
-									</span>
-								</summary>
-							</details>
-							<div class="accordion__content" id="faq-4" role="definition">
-								<p class="accordion__content-body">
-									The talks will be held in English.
-								</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section class="sec-wrap">
-				<div class="sec-wrap__container">
-					<h2 id="contacts4">Contacts</h2>
-					<ul class="contact-list">
-						<li>
-							<div>EMAIL:</div>
-							<a href="mailto:events@traffband.com" class="_icon-mail"><span>events@traffband.com</span></a>
-						</li>
-						<li>
-							<div>telegram:</div>
-							<a href="https://t.me/seopub_support" target="_blank" rel="noopener noreferrer" class="_icon-plane"><span>@seopub_support</span></a>
-						</li>
-						<li>
-							<div>Website:</div>
-							<a href="https://www.seo-pub.com" target="_blank" rel="noopener noreferrer" class="_icon-globe"><span>www.seo-pub.com</span></a>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</main>
-		<footer class="footer">
-			<span class="footer__logo btn-light"> SEO PUB </span>
-			<p>&copy; 2024 SEOPUB. All rights reserved.</p>
-		</footer>
+                  <footer class="modal__footer">
+                    <p>Speaker 1</p>
+                    <button
+                      id="backToDialog1"
+                      class="modal__next _icon-arrow-b-r"
+                    >
+                      <strong>Alex Shpion</strong>
+                      <span>COO</span>
+                    </button>
+                  </footer>
+                </dialog>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="sec-wrap --dark">
+          <div class="sec-wrap__container">
+            <h2 id="topics3">Topics</h2>
+            <ul class="topics">
+              <li class="topics__line"></li>
+              <li class="topics__line-bg"></li>
+              <li class="topics__item topics__item_hide">
+                <div class="topics__circle"></div>
+                <p class="topics__title">Spots and hyperpigmentation?</p>
+              </li>
+              <li class="topics__item">
+                <div class="topics__circle"></div>
+                <p class="topics__title">Competitors Audit.</p>
+              </li>
+              <li class="topics__item">
+                <div class="topics__circle"></div>
+                <p class="topics__title">
+                  SEO and AI: How to Leverage AI for Better Rankings?
+                </p>
+              </li>
+              <li class="topics__item">
+                <div class="topics__circle"></div>
+                <p class="topics__title">
+                  Website Speed: Why It Matters and How to Optimize It.
+                </p>
+              </li>
+              <li class="topics__item">
+                <div class="topics__circle"></div>
+                <p class="topics__title">
+                  Link Building in 2024: What Works and What Doesn’t?
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="sec-wrap">
+          <div class="sec-wrap__container">
+            <h2>FAQ</h2>
+            <ul class="faq">
+              <li class="accordion">
+                <details class="accordion__details" data-name="faq-1" open>
+                  <summary class="accordion__summary">
+                    <span
+                      class="accordion__title"
+                      role="term"
+                      aria-details="faq-1"
+                      >Is the event free to attend?
+                    </span>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="faq-1" role="definition">
+                  <p class="accordion__content-body">
+                    Yes, the event is free, but registration is required due to
+                    limited seating.
+                  </p>
+                </div>
+              </li>
+              <li class="accordion">
+                <details class="accordion__details" data-name="faq-2">
+                  <summary class="accordion__summary">
+                    <span
+                      class="accordion__title"
+                      role="term"
+                      aria-details="faq-2"
+                      >Do I need to bring anything?
+                    </span>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="faq-2" role="definition">
+                  <p class="accordion__content-body">
+                    Just bring your curiosity and maybe a notebook if you’d like
+                    to take notes!
+                  </p>
+                </div>
+              </li>
+              <li class="accordion">
+                <details class="accordion__details" data-name="faq-3">
+                  <summary class="accordion__summary">
+                    <span
+                      class="accordion__title"
+                      role="term"
+                      aria-details="faq-3"
+                      >Will there be networking opportunities?
+                    </span>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="faq-3" role="definition">
+                  <p class="accordion__content-body">
+                    Just bring your curiosity and maybe a notebook if you’d like
+                    to take notes!
+                  </p>
+                </div>
+              </li>
+              <li class="accordion">
+                <details class="accordion__details" data-name="faq-4">
+                  <summary class="accordion__summary">
+                    <span
+                      class="accordion__title"
+                      role="term"
+                      aria-details="faq-4"
+                      >What language will the event be in?
+                    </span>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="faq-4" role="definition">
+                  <p class="accordion__content-body">
+                    The talks will be held in English.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="sec-wrap">
+          <div class="sec-wrap__container">
+            <h2 id="contacts4">Contacts</h2>
+            <ul class="contact-list">
+              <li>
+                <div>EMAIL:</div>
+                <a href="mailto:events@traffband.com" class="_icon-mail"
+                  ><span>events@traffband.com</span></a
+                >
+              </li>
+              <li>
+                <div>telegram:</div>
+                <a
+                  href="https://t.me/seopub_support"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="_icon-plane"
+                  ><span>@seopub_support</span></a
+                >
+              </li>
+              <li>
+                <div>Website:</div>
+                <a
+                  href="https://www.seo-pub.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="_icon-globe"
+                  ><span>www.seo-pub.com</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <span class="footer__logo btn-light"> SEO PUB </span>
+        <p>&copy; 2024 SEOPUB. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js?_v=20241203145435"></script>
 
-	</div>
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js?_v=20241202210523"></script>
-
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js?_v=20241202210523"></script>
-	<script src="js/app.min.js?_v=20241202210523"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js?_v=20241203145435"></script>
+    <script src="js/app.min.js?_v=20241203145435"></script>
+  </body>
 </html>

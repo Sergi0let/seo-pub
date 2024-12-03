@@ -404,29 +404,19 @@ html {
   font-weight: 400;
   text-align: center
 }
-.key-block {
-  position: absolute;
-  top: -80px;
-  left: -169px;
-  z-index: 20;
-  min-width: 300px;
-  height: 336px;
-  width: 100%;
-  background-image: url(../img/keys/web-keys_1x.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center
-}
 .key-decor {
   position: absolute;
   z-index: 20;
   max-width: clamp(26.5rem,-35.8333rem + 129.8611vw,120rem);
   top: clamp(-9.625rem,-.25rem - 7.8125vw,-4rem);
-  left: -20%
+  left: -20%;
+  max-width: 424px;
+  top: -64px;
+  left: -130px
 }
 .key-decor img {
-  width: 100%;
-  height: auto
+  height: auto;
+  width: 100%
 }
 .heading {
   display: flex;
@@ -455,6 +445,7 @@ html {
 }
 .heading__subtitle p {
   position: relative;
+  line-height: 1.5;
   z-index: 10;
   margin-top: 36px;
   font-size: clamp(.875rem,.4682rem + .8475vw,1.125rem);
@@ -922,9 +913,10 @@ html {
     font-size: 36px;
     line-height: 50px
   }
-  .key-block {
-    top: -20px;
-    left: -260px
+  .key-decor {
+    max-width: 700px;
+    top: 0;
+    left: -132px
   }
   .heading h1 {
     padding-bottom: 0
@@ -1023,8 +1015,9 @@ html {
     position: relative;
     z-index: 5
   }
-  .key-block {
-    top: 32px
+  .key-decor {
+    top: -61px;
+    left: -213px
   }
   .heading__subtitle {
     padding-bottom: 0
@@ -1080,15 +1073,28 @@ html {
     display: none
   }
 }
-@media (min-width:430px) {
-  .key-block {
-    max-width: clamp(26.25rem,1.9783rem + 50.4348vw,62.5rem);
-    height: clamp(26.25rem,9.7727rem + 43.9394vw,25.5rem)
+@media (min-width:1440px) {
+  .key-decor {
+    max-width: 854px;
+    top: -98px;
+    left: -286px
+  }
+}
+@media (min-width:1640px) {
+  .sec-wrap.--hero .sec-wrap__container h1 {
+    padding-top: 287px
+  }
+}
+@media (min-width:1720px) {
+  .heading h1 {
+    font-size: clamp(8.125rem,-1.4583rem + 19.9653vw,22.5rem)
   }
 }
 @media (min-width:1740px) {
-  .sec-wrap.--hero .sec-wrap__container h1 {
-    padding-top: 287px
+  .key-decor {
+    max-width: 1060px;
+    top: -154px;
+    left: -394px
   }
 }
 @media (any-hover:hover) {
