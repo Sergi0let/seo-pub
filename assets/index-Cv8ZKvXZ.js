@@ -234,10 +234,9 @@ gsap.registerPlugin(ScrollTrigger);
     const meetupBanner = document.getElementById("meetup-sticky");
     ScrollTrigger.create({
       trigger: "#meetup-sticky",
-      start: "top 6px",
-      end: "top 20%",
-      markers: false,
-      toggleClass: "meetup-sticky--active",
+      // start: "top 6px",
+      // end: "top 20%",
+      markers: true,
       onEnter: () => {
         meetupBanner.classList.add("meetup--sticky");
       },

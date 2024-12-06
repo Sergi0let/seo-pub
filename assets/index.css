@@ -715,8 +715,8 @@ body.lock-scroll {
 .meetup--sticky {
   position: fixed;
   z-index: 50;
-  bottom: initial;
-  top: 6px;
+  bottom: 6px;
+  /* top: 6px; */
 }
 @media (min-width: 768px) {
   .meetup {
