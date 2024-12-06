@@ -208,15 +208,20 @@ gsap.registerPlugin(ScrollTrigger);
     const burger = document.querySelector(".header__menu-icon");
     const menu = document.querySelector(".nav-menu");
     const links = menu.querySelectorAll("a");
+    const banner = document.querySelector("#meetup-sticky");
+
+    
     const toggleMenu = () => {
       if (menu.classList.contains("nav-menu--open")) {
         menu.classList.remove("nav-menu--open");
         burger.classList.remove("header__menu-icon--open");
         document.body.classList.remove("lock-scroll");
+        banner.style.opacity = '1'
       } else {
         menu.classList.add("nav-menu--open");
         burger.classList.add("header__menu-icon--open");
         document.body.classList.add("lock-scroll");
+        banner.style.opacity = '0'
       }
     };
     burger.addEventListener("click", toggleMenu);

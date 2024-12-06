@@ -711,6 +711,7 @@ body.lock-scroll {
   padding: 1.2rem 1.8rem;
   border-radius: 0.4rem;
   background-color: var(--bg-secondary);
+  transition: opacity 0.3s;
 }
 .meetup--sticky {
   position: fixed;
