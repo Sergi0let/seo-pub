@@ -1032,6 +1032,12 @@ body.lock-scroll {
   transition: none;
   border: none;
 }
+.modal.modal_full {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .modal__dekor {
   position: absolute;
   top: 0;
@@ -1059,6 +1065,10 @@ body.lock-scroll {
     grid-template-areas: "image content";
     grid-template-columns: minmax(320px, 1fr) 2fr;
     gap: 2rem;
+  }
+  .modal.modal_full {
+    grid-template-columns: 1fr;
+    min-height: auto;
   }
 }
 .modal__close {

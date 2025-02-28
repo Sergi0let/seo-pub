@@ -128,6 +128,7 @@ gsap.registerPlugin(ScrollTrigger);
       nextDialogId,
       buttonId
     ) => {
+      console.log(currentDialogId, nextDialogId, buttonId);
       const button = document.getElementById(buttonId);
       const currentDialog = document.getElementById(currentDialogId);
       const nextDialog = document.getElementById(nextDialogId);
@@ -151,11 +152,22 @@ gsap.registerPlugin(ScrollTrigger);
     handleDialogAction("openDialog1", "dialog1", "open");
     handleDialogAction("closeDialog1", "dialog1", "close");
     handleDialogTransition("dialog1", "dialog2", "toDialog2");
+    handleDialogTransition("dialog1", "dialog3", "toDialog3");
+
     handleDialogAction("openDialog2", "dialog2", "open");
     handleDialogAction("closeDialog2", "dialog2", "close");
     handleDialogTransition("dialog2", "dialog1", "backToDialog1");
+    handleDialogTransition("dialog2", "dialog3", "backToDialog3");
+
+    handleDialogAction("openDialog3", "dialog3", "open");
+    handleDialogAction("closeDialog3", "dialog3", "close");
+    handleDialogTransition("dialog3", "dialog1", "backToDialog1");
+    handleDialogTransition("dialog3", "dialog2", "backToDialog2");
+    handleDialogTransition("dialog3", "dialog1", "toDialog1");
+
     handleDialogEscClose("dialog1");
     handleDialogEscClose("dialog2");
+    handleDialogEscClose("dialog3");
   };
   const addHeaderClass = () => {
     const header = document.querySelector("header");
@@ -210,18 +222,17 @@ gsap.registerPlugin(ScrollTrigger);
     const links = menu.querySelectorAll("a");
     const banner = document.querySelector("#meetup-sticky");
 
-    
     const toggleMenu = () => {
       if (menu.classList.contains("nav-menu--open")) {
         menu.classList.remove("nav-menu--open");
         burger.classList.remove("header__menu-icon--open");
         document.body.classList.remove("lock-scroll");
-        banner.style.opacity = '1'
+        banner.style.opacity = "1";
       } else {
         menu.classList.add("nav-menu--open");
         burger.classList.add("header__menu-icon--open");
         document.body.classList.add("lock-scroll");
-        banner.style.opacity = '0'
+        banner.style.opacity = "0";
       }
     };
     burger.addEventListener("click", toggleMenu);
