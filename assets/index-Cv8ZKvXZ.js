@@ -128,7 +128,6 @@ gsap.registerPlugin(ScrollTrigger);
       nextDialogId,
       buttonId
     ) => {
-      console.log(currentDialogId, nextDialogId, buttonId);
       const button = document.getElementById(buttonId);
       const currentDialog = document.getElementById(currentDialogId);
       const nextDialog = document.getElementById(nextDialogId);
@@ -263,7 +262,7 @@ gsap.registerPlugin(ScrollTrigger);
     toggleBurgerMenu();
     addHeaderClass();
     setTimeout(() => startAnimation("main-title", "SEO PUB", iterations), 300);
-    fadeTopics();
+    // fadeTopics();
     setupDialogs();
     stickyBanner();
   });
